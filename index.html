@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .ms {
+      background-color: black;
+      display: grid;
+      grid-template-areas:
+        "area1 area2 area3"
+        "area4 area6 area6"
+        "area5 area6 area6";
+      grid-template-rows: 65px 65px 65px;
+      gap: 5px;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-style: italic;
+    }
+    .item1 {
+      background-color: aqua;
+      grid-area: area1;
+    }
+    .item2 {
+      background-color: blue;
+      grid-area: area2;
+    }
+    .item3 {
+      background-color: red;
+      grid-area: area3;
+    }
+    .item4 {
+      background-color: greenyellow;
+      grid-area: area4;
+    }
+    .item5 {
+      background-color: purple;
+      grid-area: area5;
+    }
+    .item6 {
+      background-color: orange;
+      grid-area: area6;
+    }
+    .ms div {
+      border-radius: 10px;
+    }
+    .mn {
+      background-color: black;
+      display: grid;
+      padding: 10px;
+      /*grid-template-columns: 100px 150px 50px 50px 100px 20px;*/
+      grid-template-rows: 60px 120px;
+      gap: 10px;
+      grid-template-areas: 
+      "area1 area2 area3 area4 area5 area5 area6"
+      "area7 area8 area8 area4 area5 area5 area6";
+    }
+    .mn div{
+        border-radius: 5px;
+    }
+    .i1 {
+      background-color: aqua;
+      grid-area: area1;
+    }
+    .i2{
+        background-color: blue;
+      grid-area: area2;
+    }
+    .i3{
+        background-color: red;
+      grid-area: area3;
+    }
+    .i4{
+        background-color: greenyellow;
+        grid-area: area4;
+    }
+    .i5{
+        background-color: purple;
+      grid-area: area5;
+    }
+    .i6{
+        background-color: orange;
+        grid-area: area6;
+    }
+    .i7{
+        background-color: aquamarine;
+        grid-area: area7;
+    }
+    .i8{
+        background-color: violet;
+        grid-area: area8;
+    }
+    .h1{
+        color: wheat;
+        display: grid;
+        justify-content: center;
+        
+    }
+    .l3{
+      background-color: black;
+      display: grid;
+      padding: 10px;
+      
+      grid-template-rows: 50px 50px 50px;
+      gap: 10px;
+      grid-template-areas: 
+      "area1 area2 area2 area3"
+      "area1 area4 area5 area6"
+      "area1 area8 area7 area6";
+    }
+    .l3 div{
+        border-radius: 8px;
+    }
+    
+  </style>
+  <body>
+    <div class="ms"><div class="h1"><h1>layout1</h1></div>
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item3</div>
+      <div class="item4">item4</div>
+      <div class="item5">item5</div>
+      <div class="item6">item6</div>
+    </div><br>
+    <div class="mn"><div><h1 class="h1" style="justify-content:end;">layout2</h1></div>
+      <div class="i1"></div>
+      <div class="i2"></div>
+      <div class="i3"></div>
+      <div class="i4"></div>
+      <div class="i5"></div>
+      <div class="i6"></div>
+      <div class="i7"></div>
+      <div class="i8"></div>
+    </div><br>
+    <div class="l3"><div class="h1"><h1>layout3</h1></div>
+        <div class="i1"></div>
+      <div class="i2"></div>
+      <div class="i3"></div>
+      <div class="i4"></div>
+      <div class="i5"></div>
+      <div class="i6"></div>
+      <div class="i7"></div>
+      <div class="i8"></div>
+    </div>
+  </body>
+</html>
